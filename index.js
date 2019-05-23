@@ -13,5 +13,5 @@ function exactMatch(drivers, attribute) {
 
 function exactMatchToList(drivers, attribute) {
   let filteredDrivers = drivers.filter (function (driver) {return driver[Object.keys(attribute)[0]] === Object.values(attribute)[0]})
-  filteredDrivers.map(function(driver) {return driver.name})
+  return filteredDrivers.map(function(driver) {return driver.name})
 }
